@@ -18,7 +18,7 @@ public class main {
         Cafe cafe1 = new Cafe("Halaman", "Indramayu");
         cafe1.buka();
         Cafe cafe2 = new Cafe("Obaka", "Indramayu");
-        cafe2.tutup();
+        cafe2.buka();
         Cafe cafe3 = new Cafe("Tomoro", "Indramayu");
         cafe3.buka();
     }
