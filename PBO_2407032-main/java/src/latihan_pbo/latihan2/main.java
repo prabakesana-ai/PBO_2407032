@@ -1,8 +1,8 @@
 package latihan_pbo.latihan2;
 
 class Cafe{
-    String nama;
-    String alamat;
+    public String nama;
+    private String alamat;
 
     Cafe(String nama, String alamat){
         this.nama = nama;
