@@ -3,16 +3,21 @@ package tugas_pbo.tugas2;
 public class BangunRuang extends BangunDatar {
     private double tinggi;
 
-    // Constructor
     public BangunRuang(double panjang, double lebar, double tinggi) {
-        // Memanggil constructor dari class BangunDatar
         super(panjang, lebar);
         this.tinggi = tinggi;
     }
 
-    // Method untuk menghitung volume
+    @Override
+    public double hitungLuas(){
+        return panjang * lebar;
+    }
+
     public double hitungVolume() {
-        // Menggunakan kembali method hitungLuas dari class induk
+        return super.hitungLuas() * tinggi;
+    }
+    
+    public double hitungVolume2() {
         return hitungLuas() * tinggi;
     }
 }
